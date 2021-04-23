@@ -1,0 +1,51 @@
+<div class="category">
+                <h3>Laptops</h3>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      
+                      <img height="240" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2019/09/lenovo-yoga.jpg?itok=wq1mVQ9o" alt="" class="card-img-top">
+                      <div class="card-body">
+                        <p class="card-text">Lenovo Yoga</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                          </div>
+                          <small class="text-muted">$1220.99</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <img height="240" src="https://www.muycomputerpro.com/wp-content/uploads/2020/12/Surface-Laptop-Go.jpg" alt="" class="card-img-top">
+                      <div class="card-body">
+                        <p class="card-text">HP Suface Laptop Go</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                          </div>
+                          <small class="text-muted">$725.89</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <img height="240" src="https://images-na.ssl-images-amazon.com/images/I/81deSneMCOL._AC_SL1500_.jpg" alt="" class="card-img-top">
+                      <div class="card-body">
+                        <p class="card-text">Asus ZenBook DUO</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                          </div>
+                          <small class="text-muted">$1449.99</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>

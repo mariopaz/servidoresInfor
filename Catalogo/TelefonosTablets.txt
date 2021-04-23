@@ -1,0 +1,51 @@
+<div class="category">
+                <h3>Telefonos/Tablets</h3>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      
+                      <img height="240" src="https://images.samsung.com/is/image/samsung/latin-feature-the-tablet-that-goes-where-you-go-177556900?$FB_TYPE_A_MO_JPG$" alt="" class="card-img-top">
+                      <div class="card-body">
+                        <p class="card-text">Samsung Galaxy Tab A</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                          </div>
+                          <small class="text-muted">$420.99</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <img height="240" src="https://i.blogs.es/92134a/moto-g9-plus-01/840_560.jpg" alt="" class="card-img-top">
+                      <div class="card-body">
+                        <p class="card-text">Motorola G9 Plus</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                          </div>
+                          <small class="text-muted">$548.29</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <img height="240" src="https://jet-web.s3.us-west-1.amazonaws.com/images/catalog/CELULARES/SAMSUNG%20A10%20TRASERA%20Y%20FRONTAL%20BLUE%202.jpg" alt="" class="card-img-top">
+                      <div class="card-body">
+                        <p class="card-text">Samsung A10</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                          </div>
+                          <small class="text-muted">$685.99</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
