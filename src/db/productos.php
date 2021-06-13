@@ -29,5 +29,18 @@ class Productos
 
    // Funcion obtener destacados
 
+function obtenerDestacados() {
+      if(!$this->redis->get("Destacados")) {
+         $sql  = "SELECT * FROM productos group by categoria";
+        
+         $consulta = $this->conexion->query($sql);
+         $datos = $consulta->fetch_all(MYSQLI_ASSOC);
+         $this->redis->set("Destacados", serialize($datos));
+         $this->redis->expire("Destacados", 120);
+         return $datos;
+      } else {
+         return unserialize($this->redis->get("Destacados"));
+      }
+}
 
 }
