@@ -1,0 +1,35 @@
+version: "2.0"
+services:
+    web:
+        build: "./"
+        volumes:
+            - "./src:/var/www/html/"
+        ports:
+            - "80:80"
+        networks:
+            - default
+        links: 
+            - database
+    database:
+        image: 'mariadb'
+        ports: 
+            - "3306:3306"
+        command: "--default-authentication-plugin=mysql_native_password"
+        environment:
+            MYSQL_DATABASE: ventas
+            MYSQL_USER: "ugb"
+            MYSQL_PASSWORD: "S3RV1D0R3S1NF"
+            MYSQL_ROOT_PASSWORD: "S3RV1D0R3S1NF"
+        volumes:
+            - ./dump:/docker-entrypoint-initdb.d
+            - persistente:/var/lib/mysql
+        networks: 
+            - default
+    redis:
+        image: "redis"
+        ports: 
+            - "6379:6379"
+        networks:
+            - default
+volumes:
+    persistente:
