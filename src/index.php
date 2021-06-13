@@ -1,3 +1,7 @@
+<?php
+  require "db/productos.php";
+  $productos = new Productos;
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,7 +16,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="index.php">
             <img src="logo.png"height="30" alt="">
           </a>
 
@@ -21,8 +25,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="catalogo.html">Catalogo</a>
+            <a class="nav-link active" href="index.php">Inicio <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="catalogo.php">Catalogo</a>
             <a class="nav-link" href="ingresar.html">Iniciar Sesion</a>
             <a class="nav-link" href="registro.html">Registrarse</a>
           </div>
@@ -33,7 +37,7 @@
           <h1>Sitio de Ventas</h1>
           <p class="lead text-muted">Encuentra los mejores productos tecnologicos.</p>
           <p>
-            <a href="catalogo.html" class="btn btn-primary my-2">Ver Catalogo</a>
+            <a href="catalogo.php" class="btn btn-primary my-2">Ver Catalogo</a>
           </p>
         </div>
       </section>
@@ -43,55 +47,27 @@
           <div class="container">
       
             <div class="row">
+            <?php foreach($productos->obtenerDestacados() as $producto) { ?>
               <div class="col-md-4">
                 <div class="card mb-4 shadow-sm">
                   
-                  <img height="240" src="https://images.samsung.com/is/image/samsung/latin-feature-the-tablet-that-goes-where-you-go-177556900?$FB_TYPE_A_MO_JPG$" alt="" class="card-img-top">
+                  <img height="240" src="<?= $producto["imagen"]; ?>" alt="" class="card-img-top">
                   <div class="card-body">
-                    <p class="card-text">Samsung Galaxy Tab A</p>
+                    <p class="card-text"><?= $producto["nombre"]; ?></p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
                         <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                       </div>
-                      <small class="text-muted">$420.99</small>
+                      <small class="text-muted">$<?= $producto["precio"]; ?></small>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                  <img height="240" src="https://www.muycomputerpro.com/wp-content/uploads/2020/12/Surface-Laptop-Go.jpg" alt="" class="card-img-top">
-                  <div class="card-body">
-                    <p class="card-text">HP Suface Laptop Go</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
-                      </div>
-                      <small class="text-muted">$725.89</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                  <img height="240" src="https://i.blogs.es/c10713/xiaomiwatchcolorz/1366_2000.jpg" alt="" class="card-img-top">
-                  <div class="card-body">
-                    <p class="card-text">Xiaomi Watch Color</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
-                      </div>
-                      <small class="text-muted">$149.99</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <?php } ?>
             </div>
             <div class="row" style="justify-content: center;">
-                <a href="catalogo.html" class="btn btn-primary">Ver más</a>
+                <a href="catalogo.php" class="btn btn-primary">Ver más</a>
             </div>
           </div>
         </div>
